@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href ="style.css" >
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src ="app.js"></script>
+
+    <title>Quiz</title>
+</head>
+<body>
+
+    <h1>Harry Potter Quiz! </h1>
+
+    <form id="quiz" name="quiz">
+
+    <!--DOC ready-->
+    <!--start button to start game
+    on solo screen-->
+    <input type ="button" input id ="start" value ="Start Game" onclick="start();">
+    <!--timer start 120 seconds?-->
+
+
+    <!--questions
+    buttons to check anwser only one-->
+    <div class="quizBody">
+        <p>What house was Harry Potter in?</p>
+        <input type ="radio" id ="q1" class="button" name ="question1" value ="Ravenclaw">Ravenclaw<br>
+        <input type ="radio" id ="q1" class="button" name ="question1" value ="Slytherin">Slytherin<br>
+        <input type ="radio" id ="q1" class="button" name ="question1" value ="Hufflepuff">Hufflepuff<br>
+        <input type ="radio" id ="q1" class="button" name ="question1" value ="Gryffindor">Gryffindor<br>
+
+        <p>What is the name of Hermione's cat?</p>
+        <input type ="radio" id ="q2" class="button" name ="question2" value ="Scabbers">Scabbers<br>
+        <input type ="radio" id ="q2" class="button" name ="question2" value ="Crookshanks">Crookshanks<br>
+        <input type ="radio" id ="q2" class="button" name ="question2" value ="Hedwig">Hedwig<br>
+
+        <p>What Position did Harry play on the Quidditch team?</p>
+        <input type ="radio" id ="q3" class="button" name ="question3" value ="Chaser">Chaser<br>
+        <input type ="radio" id ="q3" class="button" name ="question3" value ="Beater">Beater<br>
+        <input type ="radio" id ="q3" class="button" name ="question3" value ="Keeper">Keeper<br>
+        <input type ="radio" id ="q3" class="button" name ="question3" value ="Seeker">Seeker<br>         
+
+    <!-- done button-->
+    <!--<input type ="button" id ="check" value ="Done with Quiz!" onclick="check();">-->
+    <button onclick=check()>Done with</button>
+
+    <!--time up--> 
+    
+    
+    <!--answer check-->
+
+
+    <!-- <div class="pagebreak"></div> -->
+
+    <!--totals displayed on dif page-->
+    <p><h2>Here are your totals</h2></p>
+    <p>Correct Answers:</p>
+    <p>Uncorrect Answers:</p>
+    <p>Unanswered:</p>
+
+    </div>
+
+    </form>
+    <div id="allDone">
+
+    <p id="message"></p>    
+    <p id="numberCorrect"></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src ="app.js"></script>
+</body>
+</html>

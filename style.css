@@ -1,0 +1,19 @@
+/**/
+
+
+body {
+    background-image: url("images/hogwarts_crest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-display: bold;
+    color: rgb(153, 153, 245);
+}
+
+#allDone {
+    visibility: hidden;
+}
+
+
+.pagebreak {page-break-before: always;}
